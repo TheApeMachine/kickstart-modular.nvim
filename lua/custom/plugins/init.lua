@@ -1,16 +1,50 @@
--- You can add your own plugins here or in other files in this directory!
---  I promise not to create any merge conflicts in this directory :)
---
--- See the kickstart.nvim README for more information
 return {
-  {
-    "pmizio/typescript-tools.nvim",
-    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
-    opts = {},
-  },
-  { "easymotion/vim-easymotion" },
-  { "folke/zen-mode.nvim",            opts = {} },
-  { "folke/twilight.nvim",            opts = {} },
-  { "github/copilot.vim" },
-  { "alexghergh/nvim-tmux-navigation" }
+    {
+        "pmizio/typescript-tools.nvim",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "neovim/nvim-lspconfig"
+        },
+        opts = {},
+    },
+
+    {
+        "easymotion/vim-easymotion",
+    },
+
+    {
+        "folke/zen-mode.nvim",
+        opts = {}
+    },
+
+    {
+        "folke/twilight.nvim",
+        opts = {}
+    },
+
+    {
+        "github/copilot.vim",
+    },
+
+    {
+        "alexghergh/nvim-tmux-navigation",
+        opts = {}
+    },
+
+    {
+        "robitx/gp.nvim",
+        opts = {}
+    },
+
+    {
+        "nvimdev/lspsaga.nvim",
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter",
+            "nvim-tree/nvim-web-devicons"
+        },
+        after = 'nvim-lspconfig',
+        opts = {}
+    },
+    { "https://gitlab.com/schrieveslaach/sonarlint.nvim" }
+
 }

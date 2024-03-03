@@ -43,4 +43,8 @@ vim.o.tabstop = 4
 vim.o.expandtab = 4
 vim.o.smartindent = true
 
+-- Set colorscheme (order is important here)
+vim.o.background = 'dark'
+vim.cmd [[colorscheme darkpurple]]
+
 -- vim: ts=2 sts=2 sw=2 et
